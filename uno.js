@@ -19,16 +19,11 @@ function mostrar()
 	let vacuna;
 	let dosis;
 	let sexo;
-	let promedio;
-	let contador=0;
-	let acumulador=0;
-	let contadorChina=0;
 	let acumuladorChina=0;
 	let flagJ=1;
 	let nombreJ;
 	let edadJ;
 	let vacunaJ;
-	let contadorAmericana=0;
 	let acumuladorAmericana=0;
 	let totalDosis;
 	let contador2=0;
@@ -39,9 +34,6 @@ function mostrar()
 	let contadorA=0;
 	let contadorC=0;
 	let contadorR=0;
-	let acumuladorA=0;
-	let acumuladorC=0;
-	let acumuladorR=0;
 	let totalA;
 	let respuesta;
 	let promedioA;
