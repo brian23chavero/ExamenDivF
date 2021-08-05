@@ -67,6 +67,7 @@ if (cepa=="alfa") {
 if (flagA || edad<edadJ) {
     edadJ=edad;
     nombreJ=nombre;
+    flagA=0
 }
 if (resultado=="negativo") {
     contadorN++;

@@ -22,9 +22,7 @@ function mostrar()
 let descuento =0;
 let pormedioV;
 let totalCantidad;
-
-
-	let respuesta;
+let respuesta;
 	do{
 		origen=prompt("ingrese origen oriente, occidente o secreto")
 while (origen!="oriente" && origen!="occidente"&& origen!="secreto") {
@@ -55,11 +53,7 @@ break;
 }
 	respuesta=prompt("desea ingresar nuevamente");
 	}while(respuesta== si );
-/* 	a- El origen que envió menor cantidad de vacunas
-b- El promedio por vuelo de vacunas llegadas de Occidente
-c- El total sin descuentos a pagar por los gastos de los viajes
-d- Si en total se recibieron mas de 10 millones de vacunas se hace un descuento de 5%, Si se recibieron entre 5 y 8 millones el descuento es del 10% con menor cantidad no hay descuento.
-Informar si hubo descuento de cuanto fue y el importe final con descuento */
+
 
 totalCantidad=acumuladorOccidente+acumuladorOriente+acumuladorSecreto;
 pormedioV=totalCantidad-acumuladorOriente-acumuladorOccidente;
@@ -72,12 +66,12 @@ pormedioV=totalCantidad-acumuladorOriente-acumuladorOccidente;
 	tipoB="secreto"
 	}
 	if (cantidad>10000000) {
-		descuento=importeBruto*100/5;
-		alert("Se realizo un descuento del 5%"+descuento)
+		descuento=importeBruto*100/25;
+		alert("Se realizo un descuento del 25%"+descuento)
 	}
 	else if (cantidad>=5000000 && cantidad<=8000000000) {
-		descuento=importeBruto*100/10;
-		alert("Se realizo un descuento de del 10%"+descuento)
+		descuento=importeBruto*100/15;
+		alert("Se realizo un descuento de del 15%"+descuento)
 	}
 	alert("El origen que envio menor cantidad de vacunas es "+tipoB)
 	alert("El promedio por vuelo de vacunas llegadas de Occidente es de "+ pormedioV)
